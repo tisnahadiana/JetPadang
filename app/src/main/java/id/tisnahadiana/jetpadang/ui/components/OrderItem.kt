@@ -12,8 +12,10 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import id.tisnahadiana.jetpadang.R
+import id.tisnahadiana.jetpadang.ui.theme.JetPadangTheme
 import id.tisnahadiana.jetpadang.ui.theme.Shapes
 
 @Composable
@@ -66,6 +68,17 @@ fun OrderItem(
             onProductIncreased = { onProductCountChanged(orderId, count + 1) },
             onProductDecreased = { onProductCountChanged(orderId, count - 1) },
             modifier = Modifier.padding(8.dp)
+        )
+    }
+}
+
+@Composable
+@Preview(showBackground = true)
+fun CartItemPreview() {
+    JetPadangTheme() {
+        OrderItem(
+            4, R.drawable.ayambakar, "Ayam Bakar", 18000, 0,
+            onProductCountChanged = { orderId, count -> },
         )
     }
 }
