@@ -27,9 +27,9 @@ class OrderViewModel (
         }
     }
 
-    fun updateOrderBill(rewardId: Long, count: Int) {
+    fun updateOrderBill(orderId: Long, count: Int) {
         viewModelScope.launch {
-            repository.updateOrderBill(rewardId, count)
+            repository.updateOrderBill(orderId, count)
                 .collect { isUpdated ->
                     if (isUpdated) {
                         getAddedOrderBills()

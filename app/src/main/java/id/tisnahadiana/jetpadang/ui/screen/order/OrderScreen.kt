@@ -40,8 +40,8 @@ fun OrderScreen(
             is UiState.Success -> {
                 CartContent(
                     uiState.data,
-                    onProductCountChanged = { rewardId, count ->
-                        viewModel.updateOrderBill(rewardId, count)
+                    onProductCountChanged = { orderId, count ->
+                        viewModel.updateOrderBill(orderId, count)
                     },
                     onOrderButtonClicked = onOrderButtonClicked
                 )
