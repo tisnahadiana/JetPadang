@@ -1,6 +1,6 @@
 package id.tisnahadiana.jetpadang.ui.navigation
 
-sealed class Screen (val route: String) {
+sealed class Screen(val route: String) {
     object Home : Screen("home")
     object Order : Screen("order")
     object About : Screen("about")

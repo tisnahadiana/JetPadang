@@ -24,7 +24,7 @@ import id.tisnahadiana.jetpadang.R
 import id.tisnahadiana.jetpadang.ui.theme.JetPadangTheme
 
 @Composable
-fun OrderCounter (
+fun OrderCounter(
     orderId: Long,
     orderCount: Int,
     onProductIncreased: (Long) -> Unit,

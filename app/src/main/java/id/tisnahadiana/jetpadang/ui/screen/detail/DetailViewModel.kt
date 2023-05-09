@@ -10,7 +10,7 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 
-class DetailViewModel (
+class DetailViewModel(
     private val repository: OrderRepository
 ) : ViewModel() {
     private val _uiState: MutableStateFlow<UiState<OrderBill>> =

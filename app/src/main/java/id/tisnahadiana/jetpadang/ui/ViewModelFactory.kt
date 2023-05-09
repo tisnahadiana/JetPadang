@@ -7,7 +7,7 @@ import id.tisnahadiana.jetpadang.ui.screen.detail.DetailViewModel
 import id.tisnahadiana.jetpadang.ui.screen.home.HomeViewModel
 import id.tisnahadiana.jetpadang.ui.screen.order.OrderViewModel
 
-class ViewModelFactory (private val repository: OrderRepository) :
+class ViewModelFactory(private val repository: OrderRepository) :
     ViewModelProvider.NewInstanceFactory() {
 
     @Suppress("UNCHECKED_CAST")

@@ -33,7 +33,7 @@ import id.tisnahadiana.jetpadang.ui.components.OrderCounter
 import id.tisnahadiana.jetpadang.ui.theme.JetPadangTheme
 
 @Composable
-fun DetailScreen (
+fun DetailScreen(
     orderId: Long,
     viewModel: DetailViewModel = viewModel(
         factory = ViewModelFactory(
@@ -125,10 +125,12 @@ fun DetailContent(
                 )
             }
         }
-        Spacer(modifier = Modifier
-            .fillMaxWidth()
-            .height(4.dp)
-            .background(Color.LightGray))
+        Spacer(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(4.dp)
+                .background(Color.LightGray)
+        )
         Column(
             modifier = Modifier.padding(16.dp)
         ) {

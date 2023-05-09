@@ -69,7 +69,9 @@ fun CartContent(
         TopAppBar(backgroundColor = MaterialTheme.colors.surface) {
             Text(
                 text = stringResource(R.string.menu_order),
-                modifier = Modifier.fillMaxWidth().padding(horizontal = 12.dp),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 12.dp),
                 fontWeight = FontWeight.Bold,
                 fontSize = 18.sp,
                 textAlign = TextAlign.Center

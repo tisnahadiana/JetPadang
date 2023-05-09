@@ -20,7 +20,7 @@ import id.tisnahadiana.jetpadang.ui.theme.JetPadangTheme
 import id.tisnahadiana.jetpadang.ui.theme.Shapes
 
 @Composable
-fun MenuItem (
+fun MenuItem(
     image: Int,
     title: String,
     bill: Int,

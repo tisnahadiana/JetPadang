@@ -21,7 +21,9 @@ fun OrderButton(
     Button(
         onClick = onClick,
         enabled = enabled,
-        modifier = modifier.fillMaxWidth().height(52.dp)
+        modifier = modifier
+            .fillMaxWidth()
+            .height(52.dp)
     ) {
         Text(
             text = text,

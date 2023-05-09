@@ -1,6 +1,6 @@
 package id.tisnahadiana.jetpadang.model
 
-data class Order (
+data class Order(
     val id: Long,
     val image: Int,
     val title: String,

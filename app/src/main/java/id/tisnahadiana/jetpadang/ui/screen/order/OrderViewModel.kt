@@ -8,7 +8,7 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 
-class OrderViewModel (
+class OrderViewModel(
     private val repository: OrderRepository
 ) : ViewModel() {
     private val _uiState: MutableStateFlow<UiState<OrderState>> = MutableStateFlow(UiState.Loading)
