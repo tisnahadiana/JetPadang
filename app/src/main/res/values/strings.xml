@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Masakan Padang Apps</string>
     <string name="required_point">Rp. %d </string>
+    <string name="description">%s</string>
     <string name="menu_order">Order</string>
     <string name="menu_home">Home</string>
     <string name="menu_profile">About</string>
@@ -11,4 +12,5 @@
     <string name="masakan_padang">Masakan Padang</string>
     <string name="back">Back</string>
     <string name="share_message">Hey, I have order %1$d menu in Masakan Padang with total Rp. %2$d . Do you want too?</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </string>
 </resources>

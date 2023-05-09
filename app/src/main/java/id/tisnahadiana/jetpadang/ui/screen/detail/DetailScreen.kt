@@ -54,6 +54,7 @@ fun DetailScreen(
                     data.order.image,
                     data.order.title,
                     data.order.price,
+                    data.order.description,
                     data.count,
                     onBackClick = navigateBack,
                     onAddToOrder = { count ->
@@ -72,6 +73,7 @@ fun DetailContent(
     @DrawableRes image: Int,
     title: String,
     basePrice: Int,
+    description: String,
     count: Int,
     onBackClick: () -> Unit,
     onAddToOrder: (count: Int) -> Unit,
@@ -123,6 +125,11 @@ fun DetailContent(
                     ),
                     color = MaterialTheme.colors.secondary
                 )
+                Text(
+                    text = stringResource(R.string.description, description),
+                    style = MaterialTheme.typography.body2,
+                    textAlign = TextAlign.Justify,
+                )
             }
         }
         Spacer(
@@ -145,7 +152,7 @@ fun DetailContent(
             )
             totalPoint = basePrice * orderCount
             OrderButton(
-                text = stringResource(id.tisnahadiana.jetpadang.R.string.add_to_cart, totalPoint),
+                text = stringResource(R.string.add_to_cart, totalPoint),
                 enabled = orderCount > 0,
                 onClick = {
                     onAddToOrder(orderCount)
@@ -163,6 +170,7 @@ fun DetailContentPreview() {
             R.drawable.ayambakar,
             "Ayam Bakar",
             18000,
+            "Ayam Bakar adalah hidangan Indonesia yang terbuat dari potongan ayam yang dibumbui dengan rempah-rempah khas Indonesia dan kemudian dipanggang atau dibakar hingga matang dan kecoklatan.",
             1,
             onBackClick = {},
             onAddToOrder = {}

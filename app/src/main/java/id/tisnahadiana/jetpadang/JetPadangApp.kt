@@ -142,7 +142,10 @@ private fun BottomBar(
                     icon = {
                         Icon(
                             imageVector = item.icon,
-                            contentDescription = item.title
+                            contentDescription = when (item.screen) {
+                                Screen.About -> "about_page"
+                                else -> item.title
+                            }
                         )
                     },
                     label = { Text(item.title) },

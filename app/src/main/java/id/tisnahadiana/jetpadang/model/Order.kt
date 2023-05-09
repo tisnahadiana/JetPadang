@@ -5,4 +5,5 @@ data class Order(
     val image: Int,
     val title: String,
     val price: Int,
+    val description: String,
 )
